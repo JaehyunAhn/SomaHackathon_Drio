@@ -1,0 +1,12 @@
+{% extends "header.html" %}
+{% block content %}
+
+<div class="video-container hidden-xs hidden-sm">
+  <video loop="" preload="auto" muted="" id="videoPlayer"
+  autoplay="autoplay" poster="/{{ MEDIA_URL }}media/images/register.jpg">
+  <source src="/{{ MEDIA_URL }}media/movies/UmbrellaNoir-UQLawRevue2012(1).webm" type="video/webm">
+    <source src="/{{ MEDIA_URL }}media/movies/UmbrellaNoir-UQLawRevue2012(1).mp4" type="video/mp4">
+    </video>
+  </div>
+
+{% endblock %}

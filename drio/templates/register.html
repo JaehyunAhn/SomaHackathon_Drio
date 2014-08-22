@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Join Page</title>
+<style type="text/css">
+#wrap{
+    margin: 0 auto;
+width: 300px;
+       font-family:sans-serif;
+}
+.title{
+
+}
+.join_form .button{
+display: block;
+width: 300px;
+margin: 15px 0 0 0;
+        text-align: center;
+}
+.join_form .button input{
+width: 140px;
+height: 30px;
+margin: 0;
+padding: 0;
+border: solid 1px #999;
+        border-radius: 3px;
+background: #eee;
+}
+
+fieldset{
+margin: 0;
+padding: 10px;
+width: 278px;
+border: solid 1px #999;
+        border-radius: 3px;
+}
+fieldset label>strong{
+display: block;
+margin: 16px 0 6px 0;
+}
+fieldset label>input, fieldset label>select{
+display: inline;
+width: 256px;
+margin: 0 auto;
+padding: 10px;
+border: solid 1px #999;
+        border-radius: 5px;
+font:bold 14px sans-serif;
+background: #fff;
+}
+
+.id-label, .name-label, .password-label, .sex-label, .phonenumber-label{
+}
+</style>
+</head>
+<body>
+<!-- id, name, password, sex, phonenumber, submit, reset-->
+<div id="wrap">
+<div class="title">
+<h2>회원가입 페이지</h2>
+</div>
+
+<div class="join_form">
+<form name="JoinForm1" method="post" action="JoinOutput1.php">
+<fieldset>
+<legend>
+<strong>
+Join Page
+</strong>
+</legend>
+
+
+
+<div class="id">
+<label id="id" class="id-label">
+<strong>
+ID
+</strong>
+<input
+id="id"
+type="text"
+name="id"
+value=""></input>
+</label>
+</div>
+
+
+
+
+<div
+class="button">
+<input
+type="button"
+value="중복확인"></input>
+</div>
+
+
+<div class="nickname">
+<label id="nickname" class="nickname-label">
+<strong>
+닉네임
+</strong>
+<input
+id="nickname"
+type="text"
+name="nickname"
+value=""></input>
+</label>
+</div>
+
+
+<div class="photo">
+<label id="photo" class="photo-label">
+<strong>
+사진
+</strong>
+
+                          
+
+<form method='post' 
+action='./upload.php' 
+enctype='multipart/form-data' 
+accept-charset="UTF-8">
+<input type='file' name='file'><br/>
+</form>
+</label>      
+</div>
+
+
+
+<div
+class="sex">
+<label
+id="sex"
+class="sex-label">
+<strong>
+성별
+</strong>
+<select
+id="sex"
+name="sex">
+<option
+value="M">남자</option>
+<option
+value="F">여자</option>
+<option
+value="O">기타</option>
+</select>
+</label>
+</div>
+
+
+
+<div
+class="sexpreference">
+<label
+id="sexpreference"
+class="sexpreference-label">
+<strong>
+관심이성
+</strong>
+<select
+id="sexpreference"
+name="sexpreference">
+<option
+value="M">남자</option>
+<option
+value="F">여자</option>
+<option
+value="B">둘다</option>
+</select>
+</label>
+</div>
+
+
+
+<div
+class="email">
+<label
+id="email"
+class="email-label">
+<strong>
+E-mail
+</strong>
+<input
+id="email"
+type="text"
+name="email"
+value=""></input>
+</label>
+</div>
+
+
+<div class="job">
+<label id="job" 
+class="job-label">
+<strong>
+직업
+</strong>
+<input
+id="job"
+type="text"
+name="job"
+value=""></input>
+</label>
+</div>
+
+
+
+
+<div class="age">
+<label id="age" class="age-label">
+<strong>
+나이
+</strong>
+<input
+id="age"
+type="text"
+name="age"
+value=""></input>
+</label>
+</div>
+
+<div class="height">
+<label id="height" class="height-label">
+<strong>
+키
+</strong>
+<input
+id="height"
+type="text"
+name="height"
+value=""></input>
+</label>
+</div>
+
+<div
+class="salary">
+<label
+id="salary"
+class="salary-label">
+<strong>
+연봉
+</strong>
+<select
+id="salary"
+name="salary">
+<option
+value="1">1000~2000</option>
+<option
+value="2">2000~2500</option>
+<option
+value="3">2500~3000</option>
+<option
+value='4'>3000~3500</option>
+<option
+value='5'>3500~4000</option>
+<option
+value='6'>4000~4500</option>
+<option
+value='7'>4500~5000</option>
+<option
+value='8'>5000~5500 </option>
+<option
+value='9'>5500~6000 </option>
+<option
+value='10'>6000~6500 </option>
+<option
+value='11'>6500~7000 </option>
+<option
+value='12'>7000~7500 </option>
+<option
+value='13'>7500~8000 </option>
+<option
+value='0'>Over 8000 </option>
+
+
+
+
+
+
+
+</select>
+</label>
+</div>
+
+
+<div
+class="region">
+<label
+id="region"
+class="region-label">
+<strong>
+지역
+</strong>
+<select
+id="region"
+name="region">
+<option
+value="1">서울</option>
+<option
+value="2">경기</option>
+<option
+value="3">충북</option>
+<option
+value='4'>충남</option>
+<option
+value='5'>강원</option>
+<option
+value='6'>전북</option>
+<option
+value='7'>전남</option>
+<option
+value='8'>경남</option>
+<option
+value='9'>경북</option>
+<option
+value'10'>제주</option>
+<option
+value'11'>인천</option>
+<option
+value'12'>대전</option>
+<option
+value'13'>광주</option>
+<option
+value'14'>부산</option>
+<option
+value'15'>대구</option>
+<option
+value'16'>울산</option>
+
+</select>
+</label>
+</div>
+
+
+
+<div class="car">
+<label id="car" class="car-label">
+<strong>
+차량 유무
+</strong>
+<input id="car" type="radio" name="car" value="yes" checked>Y
+<input id="car" type="radio" name="car" value="No" >N
+</label>
+</div>
+
+
+
+<div class="home">
+<label id="home" class="home-label">
+<strong>
+집 유무
+</strong>
+<input id="home" type="radio" name="home" value="Yes" checked>Y
+<input id="home" type="radio" name="home" value="No">N
+
+
+</label>
+</div>
+
+<div class="intro">
+<label id="intro" class="intro-label">
+<strong>
+자기소개
+</strong>
+<textarea
+id="intro"
+rows="30"
+cols="35"
+name="intro"
+value="">
+</textarea>
+</label>
+</div>
+
+
+
+
+
+</fieldset>
+
+
+<div
+class="button">
+<input
+type="submit"
+name="submit"
+value="submit"></input>
+<input
+type="reset"
+name="reset"
+value="reset"></input>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+

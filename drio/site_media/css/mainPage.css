@@ -1,0 +1,60 @@
+#bg {
+  z-index:-10000;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+#box {
+  width:300px;
+  margin-top:150px;
+  align:center;
+  padding-top:15px;
+  padding-bottom:15px;
+  background-color:rgba(255,255,255,0.8);
+  font-family:sans-serif;
+  font-size:22;
+  color:#915A5F;
+}
+
+a {
+  color:#915A5F;
+  text-decoration:none;
+}
+
+nav#start, form#login {
+    background-color:rgba(255,255,255,0.8);
+    margin:0px auto;
+    opacity:1;
+    padding:1em;
+    width:300px;
+}
+
+nav#start ul {
+    font-size:20pt;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+form#login {
+    display:none;
+}
+
+#login_close {
+    display:block;
+    text-align:right;
+}

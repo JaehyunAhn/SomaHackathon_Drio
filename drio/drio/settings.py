@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'MatchingSys',
+    'UserProfile',
     'south', # django migration model
     'taggit', # django tag cloud model
     'avatar', # django avatar model
